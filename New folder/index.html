@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="The Lumiere Hotel - a quiet stay in the heart of the city." />
+	<title>The Lumiere Hotel | More than a stay</title>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<a class="brand" href="#top" aria-label="The Lumiere Hotel home"><img class="brand-logo" src="logo.png" alt="The Lumiere Hotel logo" /></a>
+			<nav class="nav-links" aria-label="Main navigation">
+				<a href="#rooms">Rooms</a><a href="#story">Our story</a><a href="#dining">Dining</a><a class="nav-cta" href="#book">Book a stay</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="container hero-layout">
+				<div class="hero-content">
+					<div class="eyebrow">A considered stay in the city</div>
+					<h1>Make room<br />for wonder.</h1>
+					<p class="hero-copy">The Lumiere Hotel is a small hotel with a generous spirit. Come for the calm, stay for the stories.</p>
+				</div>
+				<div class="booking" id="book">
+					<form class="booking-form" id="booking-form" novalidate>
+						<div class="booking-title">Reserve your room</div>
+						<div class="date-range">
+							<div class="field"><label for="check-in">Check in</label><input id="check-in" type="text" placeholder="Select a date" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'" required /></div>
+							<div class="range-divider" aria-hidden="true">→</div>
+							<div class="field"><label for="check-out">Check out</label><input id="check-out" type="text" placeholder="Select a date" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'" required /></div>
+						</div>
+						<div class="field"><label for="guests">Guests</label><input id="guests" placeholder="Number of guests" type="number" min="1" max="6" value="2" required /></div>
+						<button class="booking-submit" type="submit">Check availability ↗</button>
+						<p class="booking-message" id="booking-message" aria-live="polite"></p>
+					</form>
+				</div>
+			</div>
+			<div class="container scroll-note">Scroll to explore ↓</div>
+		</section>
+
+		<section class="rooms" id="rooms">
+			<div class="container">
+				<div class="section-heading"><div><div class="eyebrow">01 / The rooms</div><h2>Sleep beautifully,<br />wake curious.</h2></div><p class="intro">Spaces that feel like a deep breath: natural textures, soft light, and everything you need to settle in.</p></div>
+				<div class="room-grid">
+					<article class="room-card"><div class="room-image"><img class="scroll-reveal" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Warmly lit hotel bedroom with a large bed" /></div><div class="room-info"><div class="room-type">01 / King room</div><h3>The Garden Room</h3><div class="room-bottom"><div class="price">$188 <small>/ night</small></div><a class="text-link" href="#book">View room</a></div></div></article>
+					<article class="room-card"><div class="room-image"><img class="scroll-reveal" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Minimal hotel room with a writing desk" /></div><div class="room-info"><div class="room-type">02 / Queen room</div><h3>The Corner Room</h3><div class="room-bottom"><div class="price">$218 <small>/ night</small></div><a class="text-link" href="#book">View room</a></div></div></article>
+					<article class="room-card"><div class="room-image"><img class="scroll-reveal" src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80" alt="Elegant hotel suite with a lounge chair" /></div><div class="room-info"><div class="room-type">03 / King suite</div><h3>The Aster Suite</h3><div class="room-bottom"><div class="price">$296 <small>/ night</small></div><a class="text-link" href="#book">View room</a></div></div></article>
+				</div>
+			</div>
+		</section>
+
+		<section class="story" id="story">
+			<div class="container story-image"><img class="scroll-reveal" src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1100&q=85" alt="Sunlit hotel lounge with plants and armchairs" /></div>
+			<div class="story-copy"><div class="eyebrow">02 / Our point of view</div><h2>Good hospitality is in the details.</h2><p>From the first coffee to the last light in the lobby, we design each moment to feel easy. Local art, generous breakfasts, and a team who remembers your name.</p><a class="text-link" href="#dining">Discover The Lumiere</a></div>
+		</section>
+
+		<section class="experience" id="dining"><div class="container"><div class="section-heading"><div><div class="eyebrow">03 / The experience</div><h2>Take your time.</h2></div><p class="intro" style="color:#b6c7ba">A little more of what makes a stay here feel like your own.</p></div><div class="experience-grid"><div class="experience-item"><span>01</span><h3>Slow mornings</h3><p>Breakfast is served until noon, because good days need room to begin.</p></div><div class="experience-item"><span>02</span><h3>House bar</h3><p>Small plates and local pours, tucked away beside the library.</p></div><div class="experience-item"><span>03</span><h3>City guide</h3><p>Our favorite corners of the neighborhood, mapped by hand.</p></div><div class="experience-item"><span>04</span><h3>Late checkout</h3><p>Stay a little longer. We think the best plans are no plans.</p></div></div></div></section>
+
+		<section class="newsletter">
+			<div class="container newsletter-inner">
+				<div>
+					<div class="eyebrow">A note from the house</div>
+					<h2>More than<br />a stay.</h2>
+				</div>
+				<div>
+					<form class="newsletter-form" id="newsletter-form" action="https://formspree.io/f/xdekovay" method="POST">
+						<label class="sr-only" for="email">Your email address</label>
+						<input id="email" name="email" type="email" placeholder="Enter your email address" required />
+						<input type="hidden" name="_subject" value="New Lumiere Hotel newsletter subscriber" />
+						<button type="submit" aria-label="Subscribe">↗</button>
+					</form>
+					<p class="form-message" id="form-message" aria-live="polite"></p>
+				</div>
+			</div>
+		</section>
+    </main>
+
+	<footer><div class="container footer-inner"><div class="footer-brand">THE LUMIERE HOTEL</div><div>14 Willow Street · New York, NY</div><div class="footer-links"><a href="#">Instagram</a><a href="#">Contact</a><a href="#">Privacy</a></div></div></footer>
+	<script>
+		const header = document.querySelector('header');
+		const bookingForm = document.querySelector('#booking-form');
+		const bookingMessage = document.querySelector('#booking-message');
+
+		window.addEventListener('scroll', () => {
+			header.classList.toggle('scrolled', window.scrollY > 24);
+		});
+
+		const revealImages = document.querySelectorAll('.scroll-reveal');
+		if ('IntersectionObserver' in window) {
+			const imageObserver = new IntersectionObserver((entries, observer) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('is-visible');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.18 });
+			revealImages.forEach((image) => imageObserver.observe(image));
+		} else {
+			revealImages.forEach((image) => image.classList.add('is-visible'));
+		}
+
+		bookingForm.addEventListener('submit', (event) => {
+			const checkInValue = document.querySelector('#check-in').value;
+			const checkOutValue = document.querySelector('#check-out').value;
+			const checkIn = new Date(checkInValue);
+			const checkOut = new Date(checkOutValue);
+			if (!checkInValue || !checkOutValue) {
+				bookingMessage.textContent = 'Please select both arrival and departure dates.';
+				return;
+			}
+			if (checkOut <= checkIn) {
+				bookingMessage.textContent = 'Departure must be after arrival.';
+				return;
+			}
+			bookingMessage.textContent = 'Rooms matching your stay are ready to explore.';
+		});
+
+	</script>
+</body>
+</html>
